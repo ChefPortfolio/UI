@@ -1,0 +1,325 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  background-image: url(/assets/Hero-Bkg.svg);
+  background-position: right;
+  position: absolute;
+  width: 100%;
+  height: 960px;
+  right: 0px;
+  top: 0px;
+}
+header .navigation {
+  display: flex;
+  height: 80px;
+}
+header .navigation .logo {
+  margin: 10px;
+}
+header .navigation nav {
+  display: flex;
+  margin-left: 550px;
+}
+header .navigation nav a {
+  color: white;
+  text-decoration: none;
+  margin: 30px 20px;
+}
+header .intro {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: right;
+  color: white;
+  margin-right: 145px;
+  margin-top: 290px;
+}
+header .intro button {
+  font-family: "Montserrat", sans-serif;
+  background: #f2b705;
+  color: white;
+  height: 62px;
+  width: 226px;
+  font-size: 28px;
+  margin-top: 80px;
+}
+header .circle {
+  display: flex;
+}
+header .circle img {
+  margin: 0 auto;
+  margin-top: 129px;
+}
+footer {
+  background-color: #141c26;
+  color: white;
+  width: 100%;
+  height: 100px;
+}
+footer p {
+  text-align: center;
+  padding-top: 50px;
+}
+.share {
+  margin-top: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.share h3 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 59px;
+}
+.share p {
+  font-family: "Roboto", sans-serif;
+  width: 498px;
+  text-align: center;
+  line-height: 21px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 56px;
+}
+.card-container .cards {
+  font-family: "Roboto", sans-serif;
+  width: 349px;
+  height: 430px;
+  background: #f2f2f2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card-container .cards .top {
+  display: flex;
+}
+.card-container .cards .top img {
+  padding: 10px;
+}
+.card-container .cards .top h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 25px;
+}
+.card-container .cards .top i {
+  margin-top: 28px;
+  margin-left: 20px;
+}
+.card-container .cards .text {
+  margin: 21px;
+  font-size: 18px;
+  line-height: 21px;
+}
+.card-container .cards .icons {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.card-container .cards .icons .arrow {
+  margin-left: 240px;
+}
+.skewed {
+  height: 650px;
+  background: #d96704;
+  margin-top: 242px;
+  display: flex;
+  -webkit-transform: skewY(3deg);
+  -moz-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  -o-transform: skewY(3deg);
+  transform: skewY(3deg);
+}
+.skewed .to-skew {
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+  -o-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+}
+.skewed .to-skew h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: white;
+  margin-left: 90px;
+  margin-top: 150px;
+}
+.skewed .to-skew img {
+  margin-left: 650px;
+  margin-top: -555px;
+}
+.review-img {
+  display: flex;
+}
+.review-img img {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.reviews {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-around;
+}
+.reviews .review-icon {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.reviews .review-icon img {
+  margin-bottom: 20px;
+}
+.reviews .review-icon .text {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+}
+.bottom-btn {
+  display: flex;
+  margin: 30px 0;
+}
+.bottom-btn button {
+  font-family: "Montserrat", sans-serif;
+  background: #f2b705;
+  color: white;
+  height: 62px;
+  width: 226px;
+  font-size: 28px;
+  margin-top: 80px;
+  margin: 0 auto;
+}
