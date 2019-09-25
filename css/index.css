@@ -396,7 +396,7 @@ footer p {
 }
 .card-container .cards .icons {
   display: flex;
-  margin-top: 60px;
+  margin-top: 80px;
   margin-left: 20px;
 }
 .card-container .cards .icons .arrow {
@@ -452,7 +452,7 @@ footer p {
 }
 .skewed .to-skew img {
   margin-left: 650px;
-  margin-top: -555px;
+  margin-top: -500px;
 }
 @media (max-width:1200px) {
   .skewed .to-skew img {
@@ -565,9 +565,14 @@ footer p {
   -o-transform: skewY(-3deg);
   transform: skewY(-3deg);
 }
+@media (max-width:1200px) {
+  .about-skewed {
+    height: 1600px;
+  }
+}
 @media (max-width:750px) {
   .about-skewed {
-    height: 4150px;
+    height: 3500px;
   }
 }
 .about-skewed .about-to-skew {
@@ -576,6 +581,7 @@ footer p {
   -ms-transform: skewY(3deg);
   -o-transform: skewY(3deg);
   transform: skewY(3deg);
+  display: flex;
 }
 .about-skewed .about-to-skew .about-us {
   margin-top: -200px;
@@ -585,12 +591,13 @@ footer p {
 .about-skewed .about-to-skew .about-us .about-card-container {
   display: flex;
   margin-top: 56px;
-  margin-left: 60px;
   justify-content: space-evenly;
+  flex-flow: row wrap;
 }
 @media (max-width:750px) {
   .about-skewed .about-to-skew .about-us .about-card-container {
     flex-direction: column;
+    margin-left: 60px;
   }
 }
 .about-skewed .about-to-skew .about-us .about-card-container .about-cards {
@@ -600,12 +607,13 @@ footer p {
   background: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
-  margin-right: 40px;
   flex-direction: column;
+  margin-top: 40px;
 }
 @media (max-width:750px) {
   .about-skewed .about-to-skew .about-us .about-card-container .about-cards {
     margin-top: 40px;
+    align-content: center;
   }
 }
 .about-skewed .about-to-skew .about-us .about-card-container .about-cards img {
