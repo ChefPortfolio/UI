@@ -23,7 +23,7 @@
     font-size: 18px;
     margin: 10px 0;
 
-    @media @mobile {
+    @media @tablet {
       width: 90%;
     }
   }
@@ -47,11 +47,11 @@
   -o-transform: skewY(-3deg);
   transform: skewY(-3deg);
 
-  @media @tablet {
+  @media @skew-1 {
     height: 1600px;
   }
 
-  @media @mobile {
+  @media @skew-2 {
     height: 3500px;
   }
 
@@ -62,6 +62,10 @@
     -o-transform: skewY(3deg);
     transform: skewY(3deg);
     display: flex;
+
+    @media @mobile {
+      margin: 0 auto;
+    }
     .about-us {
       margin-top: -200px;
       display: flex;
@@ -75,7 +79,6 @@
 
         @media @mobile {
           flex-direction: column;
-          margin-left: 60px;
         }
 
         .about-cards {
