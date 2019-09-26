@@ -229,6 +229,8 @@ body {
 /************ ABOUT STARTS HERE ***************/
 .about-head {
   background-image: url(../assets/about-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 72rem;
   right: 0px;
   top: 0px;
@@ -408,7 +410,6 @@ footer p {
   height: 650px;
   background: #d96704;
   margin-top: 242px;
-  display: flex;
   -webkit-transform: skewY(3deg);
   -moz-transform: skewY(3deg);
   -ms-transform: skewY(3deg);
@@ -426,11 +427,11 @@ footer p {
   -ms-transform: skewY(-3deg);
   -o-transform: skewY(-3deg);
   transform: skewY(-3deg);
+  display: flex;
 }
 @media (max-width:800px) {
   .skewed .to-skew {
     display: flex;
-    margin: 0 auto;
   }
 }
 .skewed .to-skew h3 {
@@ -444,13 +445,14 @@ footer p {
 }
 @media (max-width:800px) {
   .skewed .to-skew h3 {
-    margin-left: 0;
     text-align: center;
+    margin: 0 auto;
+    margin-top: 200px;
   }
 }
 .skewed .to-skew img {
-  margin-left: 650px;
-  margin-top: -500px;
+  margin-left: 100px;
+  margin-top: -70px;
 }
 @media (max-width:800px) {
   .skewed .to-skew img {
@@ -615,7 +617,8 @@ footer p {
   }
 }
 .about-skewed .about-to-skew .about-us .about-card-container .about-cards img {
-  margin-top: 36px;
+  margin: 35px 35px 20px 35px;
+  border-radius: 15px;
 }
 .about-skewed .about-to-skew .about-us .about-card-container .about-cards h5 {
   text-align: center;
