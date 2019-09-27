@@ -357,19 +357,20 @@ footer p {
     width: 85%;
   }
 }
-.card-container {
+.recipe-cards .card-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 56px;
   flex-flow: row wrap;
+  margin: 0 auto;
+  margin-top: 56px;
 }
 @media (max-width:500px) {
-  .card-container {
+  .recipe-cards .card-container {
     flex-direction: column;
     align-items: center;
   }
 }
-.card-container .cards {
+.recipe-cards .card-container .cards {
   font-family: "Roboto", sans-serif;
   width: 349px;
   height: 430px;
@@ -377,33 +378,33 @@ footer p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
 }
-.card-container .cards .top {
+.recipe-cards .card-container .cards .top {
   display: flex;
 }
-.card-container .cards .top img {
+.recipe-cards .card-container .cards .top img {
   padding: 10px;
 }
-.card-container .cards .top h5 {
+.recipe-cards .card-container .cards .top h5 {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   padding-top: 25px;
 }
-.card-container .cards .top i {
+.recipe-cards .card-container .cards .top i {
   margin-top: 28px;
   margin-left: 20px;
 }
-.card-container .cards .text {
+.recipe-cards .card-container .cards .text {
   margin: 21px;
   font-size: 18px;
   line-height: 21px;
 }
-.card-container .cards .icons {
+.recipe-cards .card-container .cards .icons {
   display: flex;
   margin-top: 80px;
   margin-left: 20px;
 }
-.card-container .cards .icons .arrow {
+.recipe-cards .card-container .cards .icons .arrow {
   margin-left: 240px;
 }
 .skewed {
@@ -428,6 +429,7 @@ footer p {
   -o-transform: skewY(-3deg);
   transform: skewY(-3deg);
   display: flex;
+  justify-content: center;
 }
 @media (max-width:800px) {
   .skewed .to-skew {
